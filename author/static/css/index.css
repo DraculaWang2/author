@@ -1,0 +1,50 @@
+body{
+    margin: 0 auto;
+}
+.container{
+    background-image: url(../img/login/login.png);
+    background-repeat: no-repeat;
+    width:1000px;
+    height: 625px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.login{
+    margin-left: 670px;
+    padding-top: 200px;
+}
+.account{
+    width:300px;
+    height: 50px;
+    background-color: rgb(143,211,212);
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+.number{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+input{
+    position: absolute;
+    width:150px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+     padding: 0;
+    border: none;
+    height:30px;
+    background-color:rgb(143,211,212) ;
+}
+.submit{
+    width:300px;
+    height: 50px;
+    background-color: rgb(26,197,244);
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+input[type="submit"]{
+    background-color:rgb(26,197,244) ;
+   margin-left: 70px;
+    color:white;
+}

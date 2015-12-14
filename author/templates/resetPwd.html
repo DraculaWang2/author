@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>密码管理</title>
+    <link rel="stylesheet" href="/static/css/resetPwd.css"/>
+    <script type="text/javascript" src="/static/js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img src="/static/img/resetPwd/logo.png" alt=""/>
+        <span class="zhuanlan" style="font-size: 160%">专栏作家系统</span>
+        <div class="user-info">
+            <img src="/static/img/resetPwd/man.png" alt=""/>
+            <span id="user_number">{{nickname}}您好，欢迎登陆</span>
+            <a href="/author/logout/"><img src="/static/img/login/logout.png" alt=""/></a>
+        </div>
+
+    </div>
+    <div class="mainContent">
+        <div class="sidebar">
+
+                <div class="accountManage">
+                    <img style="margin-left: 15px;" src="/static/img/resetPwd/article.png" alt=""/>
+                    <span class="wenzhang">文章管理</span>
+                </div>
+                <div class="myManage" style="border-bottom: solid 1px rgb(84,84,87)">
+                    <div class="myArticle" ><a class="other" href="/author/articleListView"><span style="color:white;margin-left: 20px;margin-bottom: 10px;">我的文章列表</span></a></div>
+                    <div class="newArticle"><a class="other" href="/author/newArticleView"><span style="color:white;margin-left: 20px;">发布新文章</span></a></div>
+                </div>
+                <div class="accountManage">
+                    <img style="margin-left: 15px;margin-top: 7px;" src="/static/img/resetPwd/password.png" alt=""/>
+                    <span class="wenzhang"style="margin-left: 5px;  ">账号管理</span>
+                </div>
+                <div class="myManage2">
+                    <div class="myArticle" >
+                        <a class="other" href="/author/resetPwdView"><span style="color:white;margin-left: 21px;">修改密码</span></a>
+                        <img class="arrow"style="margin-top: 8px;" src="/static/img/resetPwd/arrow.png" alt=""/>
+                    </div>
+                </div>
+        </div>
+        <div class="content">
+
+                <div class="save">
+                     <input id="submit" type="button" value="保存" class="save2"/>
+                </div>
+            <div class="tips">
+                <img src="/static/img/resetPwd/tips.png" style="margin-top: -5px;margin-left: 80px;" alt=""/>
+                <span class="tipsTitle">请牢记您设置的密码！由于系统暂时没有找回密码功能，一旦忘记，您将无法登录系统</span>
+            </div>
+            <div class="whole" >
+                    <div class="originPwd">
+                        <span class="star">*</span>当前密码
+                        <input id="origin" class="originPwd" type="password" onblur="checkOrigin()" placeholder="请输入原始密码"/>
+                        <span id="originPwd"></span>
+                    </div>
+                    <div class="originPwd originPwd2">
+                        <span class="star">*</span>新密码
+                        <input id="new" name="newPwd1" class="originPwd" type="password" onblur="checkNew()" placeholder="6-12位字符（由数字、字母组合）"/>
+                        <span id="newPassword"></span>
+                    </div>
+                    <div class="originPwd">
+                        <span class="star">*</span>再次输入
+                        <input id="again" class="originPwd" type="password" onblur="checkAgain()" placeholder="请再次输入新密码"/>
+                        <span id="newAgain"></span>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="/static/js/resetPwd.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/index.css"/>
+    <title>天天生活圈专栏作家登录</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <form id="login" method="post" action="/author/login/">
+                <div class="account">
+                    <img class="number" src="/static/img/login/account.png" alt=""/>
+                    <input type="text"id="user_number"name="user_number" placeholder="name"/>
+                </div>
+                <div class="account">
+                    <img class="number"  src="/static/img/login/password.png" alt=""/>
+                    <input type="password"name="password" placeholder="password"/>
+                </div>
+                <div class="submit">
+                    <input type="submit" id="submit" value="登录"/>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="/static/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script>
+        function check(){
+            var user = $('#user_number').val();
+            if(!user){
+                return false;
+            }
+            return true;
+        }
+        $(document).ready(function(){
+            $("#submit").click(function(){
+                var user_number =$("#user_number").val();
+                var password =$("#password").val();
+                if(check()){
+                    $("#login").submit();
+                }
+                else{
+                    alert("请输入用户名!");
+                    $("#user_number").focus();
+                }
+            })
+        })
+</script>
+</body>
+</html>

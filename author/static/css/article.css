@@ -1,0 +1,299 @@
+body{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    height:800px;
+}
+.zhuanlan{
+    color:white;
+    position: absolute;
+    margin-top: 12px;
+}
+.header{
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: rgb(0,183,142);
+
+}
+.user-info{
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+}
+#user_number{
+    position: relative;
+    left:0px;
+    top:-8px;
+}
+.mainContent{
+    position: relative;
+    width:100%;
+    height: 500px;
+}
+.sidebar{
+    position: absolute;
+    top:0;left: 0;
+    width:200px;
+    height: 720px;
+    color: white;
+    background-color: rgb(65,65,70);
+    border-bottom: solid 1px rgb(84,84,87);
+}
+.wenzhang2{
+    margin-bottom: 10px;
+    border-bottom: solid 1px rgb(84,84,87);
+
+}
+.wenzhang{
+    position: absolute;
+    margin-top:8px;
+}
+.accountManage{
+    padding:10px;
+    border-bottom: solid 1px rgb(84,84,87);
+
+}
+.accountManage2{
+
+}
+.myManage2{
+    padding: 5px;
+    background-color: rgb(92,92,99);
+}
+.arrow{
+    margin-left: 20px;
+}
+.accountManage2{
+    position: absolute;
+    margin-top:15px;
+}
+.myManage{
+    padding:10px;
+}
+.checked{
+    margin-top: 10px;
+}
+.article_manage{
+    color:white;
+    margin-left: 10px;
+    padding:10px;
+}
+.account_manage{
+    color:white;
+    margin-left: 10px; padding:10px;
+}
+.myArticle,.newArticle,.resetPwd{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.resetPwd{
+    background-color: rgb(102,102,102);
+    height:30px;
+    padding-left: 5px;
+    padding-top:12px;
+    color:white;
+    content: "©ƒ";
+
+}
+.article_manage p,.account_manage p {
+    font-weight: bold;
+}
+.content{
+    width:100%
+    margin-left:210px ;
+}
+.save{
+
+    margin-bottom: 10px;
+    width:880px;
+    height: 50px;
+}
+
+.tips{
+    padding-top: 15px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: rgb(240,234,206);
+}
+.tipsTitle{
+    position:absolute;
+    margin-top: -10px;
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(239,109,12);
+    margin-left: 10px;
+}
+.star{
+    color: rgb(239,109,12);
+    margin-right: 20px;
+}
+.originPwd{
+
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+.originPwd2{
+    margin-left: 114px;
+}
+a{
+    text-decoration: none;
+}
+
+a:link,a:hover,a:visited,a:active{
+    color:black;
+}
+input[type="password"]{
+    width:250px;
+    height: 30px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+input[type="text"]{
+    display: block;
+    height:30px;
+    width:648px;
+}
+.prompt{
+    color: #aa1111;
+    display: none;
+    margin-left: 30px;
+}
+.fred{
+    color: darkred;
+    font-size: 14px;
+}
+.fgreed{
+    color: darkgreen;
+    font-size: 14px;
+}
+#submit a,.draft a{
+    color:white;
+}
+#submit{
+    padding-top: 6px;
+    width: 120px;
+    height:30px;
+    color:white;
+    box-shadow: black;
+    text-align: center;
+    border:none;
+    margin-top: 13px;
+    border-radius: 5px;
+    background-color: rgb(5,215,118);
+    margin-right: 10px;
+    float: left;
+    margin-left: 210px;
+}
+.draft{
+    padding-top: 6px;
+    width: 120px;
+    height:30px;
+    color:white;
+    box-shadow: black;
+    text-align: center;
+    border:none;
+    margin-top: 13px;
+    border-radius: 5px;
+    background-color: rgb(249,110,67);
+    margin-right: 10px;
+    float: left;
+}
+.delete{
+    padding-top: 6px;
+    width: 120px;
+    height:30px;
+    color:white;
+    box-shadow: black;
+    text-align: center;
+    border:none;
+    margin-top: 13px;
+    border-radius: 5px;
+    background-color: rgb(76,138,241);
+    margin-right: 10px;
+    float: left;
+}
+.whole{
+    background-color: rgb(234,237,242);padding-top: 50px;
+    height: 525px;
+}
+.managePicture{
+    position:absolute;
+    left:1050px;
+    top:127px;
+}
+.managePicture p{
+    background-color: rgb(242,242,242);
+    border: solid 1px rgb(242,242,242);
+    width:200px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+.ulPicture{
+    border:solid 1px rgb(242,242,242);
+    width:150px;
+    list-style: none;
+}
+table{
+
+    width:65%;
+    margin-left: 10px;
+    border:solid 1px rgb(204,204,204);
+}
+.navigate{
+    border:solid 1px rgb(204,204,204);
+    width: 720px;
+    margin-top: 0;
+    background-color: rgb(215,215,215);
+    height:70px;
+    margin-right: 10px;
+}
+.navigate li {
+    font-size:14px;
+    display: block;
+    border:solid 1px black;
+    float:left;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+table tr th{
+    font-weight: 100;
+    font-size:14px;
+    height: 30px;
+}
+table tr .titleContent{
+    border-left:solid 1px rgb(204,204,204);
+}
+table tr td{
+     text-align: center;
+     height: 30px;
+}
+.skip{
+    border-radius: 5px;
+    background-color: rgb(0,183,142);
+    box-shadow: none;
+}
+.step-links{
+    position: absolute;
+    left:75%;
+
+}
+.step-link{
+    margin-left: 10px;
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+}
+.form-number{
+    margin-top: 10px;
+    float:right;
+}
